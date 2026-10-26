@@ -19,7 +19,12 @@
     "onStartupFinished"
   ],
   "main": "./dist/extension.js",
-  "contributes": {},
+  "contributes": {"configuration": {
+      "title": "Hi Developer",
+      "__properties": {
+
+  }
+},
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "node esbuild.js",
@@ -34,4 +39,5 @@
     "esbuild": "^0.28.1",
     "typescript": "^6.0.3"
   }
+}
 }
